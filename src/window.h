@@ -1,0 +1,8 @@
+
+
+// window.h
+
+
+class window
+{
+};
