@@ -1,12 +1,14 @@
-# Compiled Object files
-*.slo
-*.lo
+Makefile
 *.o
+*.d
+*-obj
+bochs.img
+kernel.ld
+boot
+boot.1st
+boot.out
+obj/*
+obj
+*~
 
-# Compiled Dynamic libraries
-*.so
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
