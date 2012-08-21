@@ -111,10 +111,10 @@ bool enb_main_window :: handle_event ()
     return (true);
 }
 
-int game_main (int argc, char ** argv)
+int game_main (int argc, char** argv)
 {
-    enb_main_window * main_window = new enb_main_window ();
-    enb_game_engine * engine = new enb_game_engine ();
+    enb_main_window* main_window = new enb_main_window ();
+    enb_game_engine* engine = new enb_game_engine ();
 
     while (main_window->handle_event ())
     {
@@ -129,7 +129,7 @@ int game_main (int argc, char ** argv)
     return (0);
 }
 
-int main (int argc, char ** argv)
+int main (int argc, char** argv)
 {
     if (SDL_Init (SDL_INIT_EVERYTHING) < 0)
     {

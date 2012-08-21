@@ -22,7 +22,7 @@ class enb_main_window : public enb_window_opengl
 {
 private:
     // private game data
-    enb_game * game;
+    enb_game* game;
 public:
     enb_main_window (enb_game * g);
     ~enb_main_window ();

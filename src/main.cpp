@@ -83,10 +83,10 @@ void handle_event_destroy (/* TODO */)
 
 
 // running from here
-int game_main (int argc, char ** argv)
+int game_main (int argc, char** argv)
 {
-    enb_main_window * main_window = NULL;
-    enb_game * game = NULL;
+    enb_main_window* main_window = NULL;
+    enb_game* game = NULL;
 
     game = new enb_game ();
     main_window = new enb_main_window (game);
@@ -96,20 +96,20 @@ int game_main (int argc, char ** argv)
 
     // main loooooooooooooop (handle event)
     while (main_window :: handleEvent ())
-    {
-        game->process ();
-    }
+	{
+	    game->process ();
+	}
 }
 
-int main (int argc, char **argv)
+int main (int argc, char** argv)
 {
     if (SDL_Init (...) < 0)
-    {
-        std::cerr << "can't initialize SDL library";
-        return (1);
-    }
+	{
+	    std::cerr << "can't initialize SDL library";
+	    return (1);
+	}
 
-    int result = game_main (argc, char ** argv);
+    int result = game_main (argc, argv);
 
     SDL_Quit ();
 
